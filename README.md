@@ -2,8 +2,18 @@
 Query my TP-Link router's DHCP leases
 
 ## Usage
+```
+$ getclients.py -h
+usage: getclients.py [-h] [-u USER] [-p PW] [-i IP]
 
-Edit your auth token in the code. Then:
+Query a TP-Link router's DHCP leases
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u USER, --user USER  Username (default: admin)
+  -p PW, --password PW  Password (default: admin)
+  -i IP, --ip IP        Router IP (default: 192.168.1.1)
+```
 ```
 $ getclients.py
 192.168.1.123	12:34:56:78:9A:BC	Philips-hue
@@ -16,3 +26,5 @@ $ getclients.py
 
 ## How
 A Python [request](python-requests.org) to what seems to be *TP-LINK AJAX WEB 1.0*
+
+Tested with TD-W8980B
